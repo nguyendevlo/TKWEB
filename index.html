@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <title>Play List</title>
+  </head>
+  <body>
+    <div id="root">
+      <aside id="slide-bar">
+        <h1><i class="bi bi-music-note"></i><span>Playlist </span></h1>
+        <div class="play_list">
+          <h4 class="active1" id="discover_btn">
+            <i class="bi bi-vinyl-fill"></i><span>Khám Phá</span>
+          </h4>
+          <h4 id="topChart_btn">
+            <i class="bi bi-graph-up"></i><span>Top Charts</span>
+          </h4>
+          <h4 id="library_btn">
+            <i class="bi bi-music-note-list"></i><span>Thư viện </span>
+          </h4>
+        </div>
+        <div class="menu-item">
+          <h4><i class="bi bi-box-arrow-down"></i></h4>
+          <h4><i class="bi bi-gear-fill"></i></h4>
+          <h4>
+            <a href="./login.html"> <i class="bi bi-person-fill"></i></a>
+          </h4>
+          <h4>
+            <a href="./GioiThieu.html"> <i class="bi bi-person-square"></i></a>
+          </h4>
+        </div>
+        <div class="menu_list">
+          <h4>My play list <i class="bi bi-heart-fill"></i></h4>
+          <div class="menu_song">
+            <li class="songItem">
+              <span>01</span><img src="./img/imgItem/1.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="1"></i>
+            </li>
+            <li class="songItem">
+              <span>02</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="2"></i>
+            </li>
+            <li class="songItem">
+              <span>03</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="3"></i>
+            </li>
+            <li class="songItem">
+              <span>04</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="4"></i>
+            </li>
+            <li class="songItem">
+              <span>05</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="5"></i>
+            </li>
+            <li class="songItem">
+              <span>06</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="6"></i>
+            </li>
+            <li class="songItem">
+              <span>07</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="7"></i>
+            </li>
+            <li class="songItem">
+              <span>08</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="8"></i>
+            </li>
+            <li class="songItem">
+              <span>09</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="9"></i>
+            </li>
+            <li class="songItem">
+              <span>10</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="10"></i>
+            </li>
+            <li class="songItem">
+              <span>11</span><img src="./img/imgItem/2.jpg" alt="" />
+              <h5>
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi bi-play-circle-fill playListPlay" id="11"></i>
+            </li>
+          </div>
+        </div>
+      </aside>
+      <div id="main-page">
+        <main class="main-page-bx" id="main-page-change">
+          <div class="page-bx-slide">
+            <div class="container-slide">
+              <div id="slide">
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/1.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/2.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/3.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/4.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/5.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div
+                  class="item-slide"
+                  style="background-image: url(./img/6.jpg)"
+                >
+                  <div class="content">
+                    <div class="name">AVICII</div>
+                    <div class="des">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <button class="btn-play">Play Now</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button id="prev"><i class="bi bi-caret-left-fill"></i></button>
+                <button id="next">
+                  <i class="bi bi-caret-right-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="popular_song">
+            <div class="h4">
+              <h4>Popular Song</h4>
+              <div class="btn_s">
+                <i class="bi bi-arrow-left-short" id="pop_song_left"></i
+                ><i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+              </div>
+            </div>
+            <div class="pop_song">
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="12"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="12"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="13"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="14"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="15"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="16"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="17"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="18"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="19"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+              <li class="songItem">
+                <div class="img_play">
+                  <img src="./img/imgItem/2.jpg" alt="" /><i
+                    class="bi bi-play-circle-fill playListPlay"
+                    id="20"
+                  ></i>
+                </div>
+                <h5>
+                  On My Way
+                  <div class="subtitle">Alan Walker</div>
+                </h5>
+              </li>
+            </div>
+          </div>
+          <div class="popular_artists">
+            <div class="h4">
+              <h4>Popular Artists</h4>
+              <div class="btn_s">
+                <i class="bi bi-arrow-left-short" id="pop_art_left"></i
+                ><i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+              </div>
+            </div>
+            <div class="item item_art">
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+              <li><img src="./img/imgItem/Avicii003.jpg" alt="" /></li>
+            </div>
+          </div>
+          <div class="chart_bx">
+            <h3>#Rank<i class="bi bi-graph-up-arrow"></i></h3>
+            <div class="chart-bx-list">
+              <li class="chart-bx-item">
+                <span>1</span>
+                <div class="chart-bx-item-img">
+                  <img src="./img/imgItem/3.jpg" alt="" />
+                </div>
+                <h5>
+                  Waiting For Love
+                  <div class="subtitle">Avicii</div>
+                </h5>
+              </li>
+              <li class="chart-bx-item">
+                <span>2</span>
+                <div class="chart-bx-item-img">
+                  <img src="./img/imgItem/3.jpg" alt="" />
+                </div>
+                <h5>
+                  Waiting For Love
+                  <div class="subtitle">Avicii</div>
+                </h5>
+              </li>
+              <li class="chart-bx-item">
+                <span>3</span>
+                <div class="chart-bx-item-img">
+                  <img src="./img/imgItem/3.jpg" alt="" />
+                </div>
+                <h5>
+                  Waiting For Love
+                  <div class="subtitle">Avicii</div>
+                </h5>
+              </li>
+            </div>
+            <div class="chart-bx-item">
+              <canvas id="salesData"></canvas>
+            </div>
+          </div>
+        </main>
+        <header id="header">
+          <div class="search-bx-left">
+            <i class="bi bi-arrow-left-short"></i
+            ><i class="bi bi-arrow-right-short"></i>
+            <div class="header--search-bx">
+              <i class="bi bi-search search-icon"></i>
+              <input
+                id="search"
+                type="text"
+                placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
+              />
+            </div>
+          </div>
+          <div class="search-bx-right">
+            <i class="bi bi-box-arrow-down"></i><i class="bi bi-gear-fill"></i
+            ><i class="header-user-btn bi bi-person-fill">
+              <nav class="navbar_user">
+                <li>
+                  <a href="./login.html">
+                    <i class="bi bi-box-arrow-in-right"> </i>Login/Sign Up</a
+                  >
+                </li>
+                <li>
+                  <a href="./index2.html">
+                    <i class="bi bi-currency-dollar"></i>Mua vip
+                  </a>
+                </li>
+                <li>
+                  <a href="./index2.html">
+                    <i class="bi bi-coin"></i>Nâng cấp</a
+                  >
+                </li>
+                <li>
+                  <a href="./GioiThieu.html">
+                    <i class="bi bi-person-bounding-box"></i>Giới thiệu</a
+                  >
+                </li>
+              </nav></i
+            >
+          </div>
+        </header>
+      </div>
+      <div id="play-controls">
+        <div class="master_play">
+          <div class="master_play-box-left">
+            <div class="media control-item">
+              <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+              </div>
+              <img src="./img/imgItem/1.jpg" alt="" id="poster_master_play" />
+              <h5 id="title">
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+              </h5>
+            </div>
+          </div>
+          <div class="master_play-box-center">
+            <div class="control_box control-item">
+              <div class="btn-icon">
+                <i class="bi bi-music-note-beamed shuffle"></i
+                ><i class="bi bi-skip-start-fill"></i
+                ><i class="bi bi-play-circle" id="master_play"></i
+                ><i class="bi bi-skip-end-fill"></i
+                ><i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+              </div>
+              <div class="slide-bar-control">
+                <span id="currentStart">0:00</span>
+                <div class="bar">
+                  <input id="seek" type="range" name="" min="0" max="100" />
+                  <div class="bar2" id="bar2">
+                    <div class="dot"></div>
+                  </div>
+                </div>
+                <span id="currentEnd">0:50</span>
+              </div>
+            </div>
+          </div>
+          <div class="master_play-box-right">
+            <div class="vol-controls control-item">
+              <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"> </i>
+                <input id="vol" type="range" name="" min="0" max="100" />
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./index.js"></script>
+      <script src="./app.js"></script>
+      <script src="./library.js"></script>
+      <script src="./chart.js"></script>
+    </div>
+  </body>
+</html>
